@@ -1,0 +1,795 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>2018 IEduChina第二届 国际学校在线展</title>
+	<link href="http://www.ieduchina.com/favicon.ico" rel="Shortcut Icon" />
+	<meta name="description" content="为帮助中国学生和家长更好地了解国际学校入学要求及相关考试等多方面内容，为孩子选到适合的国际学校，IEduChina中国国际教育网将于2018年3月10日举办国际学校在线展，本届在线展将邀请全国几百所优质的国际学校与高中国际班；知名国际教育专家、国际学校校长及招生官亲临直播；学生、家长和老师可以在线直接交流，欢迎有国际学校就读意愿的优秀学生及家长参加！全程您可目睹百所名师名校风采，倾听精彩演讲，与名校校长及招生官深入交流">
+	<meta name="keywords" content="国际学校，国际教育展，国际课程，出国留学，雅思、托福培训，海外高中，英国高中，海外院校，在线展，直播，名校直播">
+	<link href="css/main.css?v=2017122601" rel="stylesheet">
+</head>
+
+<body>
+	<div class="banner">
+		<!-- <a class="logo" target="_blank" href="http://www.ieduchina.com/" style="display: block;width: 190px;height:75px;">
+			<img src="images/ieduchina.png" target="_blank" width="190" height="75" alt="中国国际教育网">
+		</a> -->
+		<!-- <div style="width: 100%;height: 636px">
+			<img src="images/banner1213.jpg" alt="" style="width:100%;height: 100%;">
+		</div> -->
+		<div class="linkTosignUp-wrap w1000">
+			<span class="linkTosignUp"></span>
+		</div>
+	</div>
+
+	<div class="nav">
+		<div class="w1000">
+			<ul class="unselect clear nav-item">
+				<li>
+					<a href="index.html#layout-one">展会亮点</a>
+				</li>
+				<li>
+					<a href="index.html#school">国际学校</a>
+				</li>
+				<li>
+					<a href="index.html#lecture">精彩议程</a>
+				</li>
+				<li>
+					<a href="index.html#specialist">教育专家</a>
+				</li>
+
+				<li>
+					<a href="index.html#course">国际课程</a>
+				</li>
+				<li>
+					<a href="index.html#contact">联系我们</a>
+				</li>
+				<li class="nav-apply">
+					<a href="javascript:" class="showApplyBtn">点击报名参展</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- 报名弹窗 -->
+	<div class="popup">
+		<div class="popup-apply">
+			<span id="popupClose" class="popup-close">×</span>
+			<form id="applyForm" class="popup-apply-form">
+				<div class="clear popup-apply-item">
+					<div class="fl">
+						<label class="label">学生姓名</label>
+						<input name="name" type="text" nullmsg="请输入学生姓名">
+					</div>
+					<div class="fr">
+						<label class="label">联系手机</label>
+						<input name="tel" type="text" nullmsg="请输入联系手机" errormsg="请输入正确的手机号码" datatype="m">
+					</div>
+				</div>
+				<div class="clear popup-apply-item">
+					<div class="fl">
+						<label class="label">即将入读年级</label>
+						<select name="grade" nullmsg="请选择即将入读年级">
+							<option value="">请选择</option>
+							<option value="幼儿园">幼儿园</option>
+							<option value="一年级">一年级</option>
+							<option value="二年级">二年级</option>
+							<option value="三年级">三年级</option>
+							<option value="四年级">四年级</option>
+							<option value="五年级">五年级</option>
+							<option value="六年级">六年级</option>
+							<option value="初一">初一</option>
+							<option value="初二">初二</option>
+							<option value="初三">初三</option>
+							<option value="高一">高一</option>
+							<option value="高二">高二</option>
+							<option value="高三">高三</option>
+							<option value="在读大学">在读大学</option>
+							<option value="在职人员">在职人员</option>
+						</select>
+					</div>
+					<div class="fr">
+						<label class="label">所在城市</label>
+						<input name="city" type="text" nullmsg="请输入所在城市">
+					</div>
+				</div>
+				<p class="apply-error error-tips"></p>
+				<div id="applySubmit" class="popup-apply-submit">一键报名</div>
+			</form>
+		</div>
+		<div class="apply-success">
+			<p>
+				<span id="successCloseTime">3</span>秒后自动关闭</p>
+		</div>
+	</div>
+
+	<!-- 底部浮窗 -->
+	<div class="layout-bottom">
+		<div class="w1000 clear">
+			<div class="layout-bottom-form">
+				<form id="bottomApplyForm">
+					<div class="fl">
+						<div class="clear item">
+							<label class="label">学生姓名</label>
+							<input name="name" type="text" nullmsg="请输入学生姓名">
+							<label class="label">联系手机</label>
+							<input name="tel" type="text" nullmsg="请输入联系手机" errormsg="请输入正确的手机号码" datatype="m">
+						</div>
+						<div class="clear item">
+							<label class="label">即将入读年级</label>
+							<select name="grade" nullmsg="请选择即将入读年级">
+								<option value="">请选择</option>
+								<option value="幼儿园">幼儿园</option>
+								<option value="一年级">一年级</option>
+								<option value="二年级">二年级</option>
+								<option value="三年级">三年级</option>
+								<option value="四年级">四年级</option>
+								<option value="五年级">五年级</option>
+								<option value="六年级">六年级</option>
+								<option value="初一">初一</option>
+								<option value="初二">初二</option>
+								<option value="初三">初三</option>
+								<option value="高一">高一</option>
+								<option value="高二">高二</option>
+								<option value="高三">高三</option>
+								<option value="在读大学">在读大学</option>
+								<option value="在职人员">在职人员</option>
+							</select>
+							<label class="label">所在城市</label>
+							<input name="city" type="text" nullmsg="请输入所在城市">
+						</div>
+					</div>
+					<div class="bottom-apply-submit" id="bottomApplySubmit">立即提交</div>
+				</form>
+			</div>
+			<div class="bottom-code">
+				<img src="images/code_bottom1.png?v=20171109" height="98" width="110" alt="扫码参会">
+			</div>
+		</div>
+	</div>
+
+	<!-- 右侧浮窗 -->
+	<div class="layout-right">
+		<div class="layout-right-form">
+			<form id="rightApplyForm">
+				<label class="label">学生姓名</label>
+				<input name="name" type="text" nullmsg="请输入学生姓名">
+				<label class="label">联系手机</label>
+				<input name="tel" type="text" nullmsg="请输入联系手机" errormsg="请输入正确的手机号码" datatype="m">
+				<label class="label">即将入读年级</label>
+				<select name="grade" nullmsg="请选择即将入读年级">
+					<option value="">请选择</option>
+					<option value="幼儿园">幼儿园</option>
+					<option value="一年级">一年级</option>
+					<option value="二年级">二年级</option>
+					<option value="三年级">三年级</option>
+					<option value="四年级">四年级</option>
+					<option value="五年级">五年级</option>
+					<option value="六年级">六年级</option>
+					<option value="初一">初一</option>
+					<option value="初二">初二</option>
+					<option value="初三">初三</option>
+					<option value="高一">高一</option>
+					<option value="高二">高二</option>
+					<option value="高三">高三</option>
+					<option value="在读大学">在读大学</option>
+					<option value="在职人员">在职人员</option>
+				</select>
+				<label class="label">所在城市</label>
+				<input name="city" type="text" nullmsg="请输入所在城市">
+				<div class="right-apply-submit" id="rightApplySubmit">提 交</div>
+			</form>
+		</div>
+	</div>
+	<!-- 左侧导航 -->
+	<div class="layout-left hide">
+		<a href="javascript:void(0);" class="cc" id="ccBox"></a>
+		<a href="#school" class="navlink1 top"></a>
+		<a href="#specialist" class="navlink1"></a>
+		<a href="#course" class="navlink1"></a>
+		<a href="#layout-one" class="navlink1"></a>
+		<a href="#lecture" class="navlink1"></a>
+	</div>
+
+	<div class="layout-one" id="layout-one">
+		
+	</div>
+
+	<div class="layout-two" id="school">
+		
+	</div>
+	<div class="layout-ten" id="oldSchool">
+		<h2 class="g-title2">
+			
+		</h2>
+		<div class="w1000">
+			<ul class="unselect clear attended-school-tab">
+				<li class="current">北京</li>
+				<li>上海</li>
+				<li>深圳</li>
+				<li>广州</li>
+				<li>佛山及其他城市</li>
+				<li>海外高中</li>
+			</ul>
+			<!-- 北京 -->
+			<div class="attended-school-bd" style="display: block;">
+				<table width="925" cellpadding="0" cellspacing="0" border="0">
+					<tr>
+						<td>北京哈罗英国学校</td>
+						<td>北京王府学校</td>
+						<td>北京鼎石国际学校</td>
+						<td>北京拔萃双语学校</td>
+						<td>北京中加学校</td>
+					</tr>
+					<tr>
+						<td>北京乐成国际学校</td>
+						<td>北京王府外国语学校</td>
+						<td>北京市中芯学校</td>
+						<td>北京京西国际学校</td>
+						<td>北京市阳光情国际学校</td>
+					</tr>
+					<tr>
+						<td>北京世青国际学校</td>
+						<td>北京德威英国国际学校</td>
+						<td>北京力迈外国语学校</td>
+						<td>青苗国际双语学校</td>
+						<td>北京耀中国际学校</td>
+					</tr>
+					<tr>
+						<td>海嘉国际双语学校</td>
+						<td>北京私立汇佳学校</td>
+						<td>北京爱迪(国际)学校</td>
+						<td>北京BISS国际学校</td>
+						<td>北京英国学校</td>
+					</tr>
+					<tr>
+						<td>北京顺义国际学校</td>
+						<td>北京私立树人•瑞贝学校</td>
+						<td>圣保罗美国国际学校</td>
+						<td>北京3e国际学校</td>
+						<td>北京常春藤国际学校</td>
+					</tr>
+					<tr>
+						<td>北京外国语大学国际高中</td>
+						<td>北京杜威国际学校</td>
+						<td>首都师范大学附属中学国际部</td>
+						<td>力迈卡文特美国学校</td>
+						<td>北京市十一学校</td>
+					</tr>
+					<tr>
+						<td>北京市海淀区领科教育培训学校</td>
+						<td>北京新桥外国语高中学校</td>
+						<td>人大附中朝阳分校国际高中课程</td>
+						<td>芳草地国际学校</td>
+						<td>北京市八十中学国际部</td>
+					</tr>
+					<tr>
+						<td>北京山谷学校</td>
+						<td>北京临川学校国际部</td>
+						<td>北京第二外国语学校国际部</td>
+						<td>启明星双语学校</td>
+						<td>北京蒙台梭利国际学校</td>
+					</tr>
+					<tr>
+						<td>北京私立新亚中学</td>
+						<td>北京外国语大学美国高中</td>
+						<td>北京澳际国际学校</td>
+						<td>北外附属外国语学校</td>
+						<td>北京市师达中学</td>
+					</tr>
+					<tr>
+						<td>北京美达菲国际学校</td>
+						<td>清华大学附属中学国际部</td>
+						<td>北京实验外国语学校</td>
+						<td>北京大学附属中学国际部</td>
+						<td>北京加拿大国际学校</td>
+					</tr>
+				</table>
+			</div>
+			<!-- 上海 -->
+			<div class="attended-school-bd">
+				<table width="925" cellpadding="0" cellspacing="0" border="0">
+					<tr>
+						<td>包玉刚实验学校</td>
+						<td>上海外国语大学立泰学院国际课程中心</td>
+						<td>科桥学院</td>
+						<td>上海新虹桥中学国际部</td>
+						<td>华二-上海交通大学教育集团国际预科</td>
+					</tr>
+					<tr>
+						<td>上海市世界外国语中学</td>
+						<td>上海进华中学国际部</td>
+						<td>上海民办铭远双语高级中学</td>
+						<td>华二-瑞士莱蒙尼亚学院</td>
+						<td>震旦美高课程</td>
+					</tr>
+					<tr>
+						<td>上海平和双语学校</td>
+						<td>上海STEAM北美高中</td>
+						<td>卡迪夫公学上海中心</td>
+						<td>上海新和中学国际部</td>
+						<td>上海国王国际课程中心</td>
+					</tr>
+					<tr>
+						<td>上海协和国际学校</td>
+						<td>上海斯代文森国际高中</td>
+						<td>上海师范大学附属第二外国语学校国际部</td>
+						<td>朝阳义塾</td>
+						<td>上海美高</td>
+					</tr>
+					<tr>
+						<td>上海星河湾双语学校</td>
+						<td>上海燎原双语学校</td>
+						<td>上海常青藤学校</td>
+						<td>詹尼森公立高中（上海）中心</td>
+						<td>上海东方外国语</td>
+					</tr>
+					<tr>
+						<td>上海耀中国际学校</td>
+						<td>美国林登高中（上海校区）</td>
+						<td>上海美国蓝带高中国际课程中心</td>
+						<td>上海交大教育集团澳大利亚课程中心</td>
+						<td>上海七宝德怀特高级中学</td>
+					</tr>
+					<tr>
+						<td>复旦大学附属中学国际部</td>
+						<td>上海德威外籍人员子女学校</td>
+						<td>上海市枫叶国际学校</td>
+						<td>上海市曹杨第二中学</td>
+						<td></td>
+					</tr>
+				</table>
+			</div>
+			<!-- 深圳 -->
+			<div class="attended-school-bd">
+				<table width="925" cellpadding="0" cellspacing="0" border="0">
+					<tr>
+						<td>深圳南山国际学校</td>
+						<td>北大附中深圳南山分校国际部</td>
+						<td>深圳（南山）中加学校</td>
+						<td>深圳市崛起青之藤国际学校</td>
+						<td>深圳贝赛思国际学校</td>
+					</tr>
+					<tr>
+						<td>深圳市中英公学</td>
+						<td>深圳市弘金地学校</td>
+						<td>深圳市博纳学校</td>
+						<td>深圳市富源国际教育中心</td>
+						<td>深圳瑞得福国际学校</td>
+					</tr>
+					<tr>
+						<td>深圳外国语学校国际部</td>
+						<td>深圳市桃源居中澳实验学校</td>
+						<td>深圳实验承翰学校(国际课程实验校区）</td>
+						<td colspan="2">美国橡树山学校深圳分校康桥书院</td>
+					</tr>
+
+					<tr>
+						<td>曦城协同国际学校</td>
+						<td>深圳市美中学校</td>
+						<td>深圳市耀华实验学校</td>
+						<td colspan="2">深圳艺校福田泰然学校</td>
+					</tr>
+					<tr>
+						<td>深圳市石岩公学</td>
+						<td>深圳市沪教院福田实验学校</td>
+						<td>万科梅沙书院</td>
+						<td colspan="2">深圳市城市绿洲国际学校</td>
+					</tr>
+					<tr>
+						<td>深大师院国际高中</td>
+						<td>深圳蛇口国际学校</td>
+						<td>深圳深美国际学校</td>
+						<td colspan="2">深圳市东方英文书院</td>
+					</tr>
+					<tr>
+						<td>深圳奥斯翰外语学校</td>
+						<td>深圳科爱赛国际学校</td>
+						<td>讯得达国际书院</td>
+						<td colspan="2">柏朗思观澜湖国际学校</td>
+					</tr>
+				</table>
+			</div>
+			<!-- 广州 -->
+			<div class="attended-school-bd">
+				<table width="925" cellpadding="0" cellspacing="0" border="0">
+					<tr>
+						<td>广州市第二十一中学国际部</td>
+						<td>广州市香江中学</td>
+						<td>广州市白云区中大附属外国语小学</td>
+						<td>广州第二外国语学校国际部</td>
+						<td>暨南大学GAC暨南教育中心</td>
+					</tr>
+					<tr>
+						<td>广州市黄埔中大附属外国语实验中学</td>
+						<td>广州市黄埔中大附属外国语实验小学</td>
+						<td>中山大学剑桥Alevel国际课程中心</td>
+						<td>广州华美英语实验学校中加高中</td>
+						<td>广州西关外国语学校国际部</td>
+					</tr>
+					<tr>
+						<td>广州第六中学国际部</td>
+						<td>广州爱莎国际学校</td>
+						<td>广州加拿大人国际学校</td>
+						<td>广州执信中学PCP国际班</td>
+						<td>广州祈福英语实验学校</td>
+					</tr>
+					<tr>
+						<td>华南师范大学附属中学国际部</td>
+						<td>广州亚加达国际预科</td>
+						<td>英豪剑桥国际高中</td>
+						<td>广州协和中学国际班</td>
+						<td>广东广雅中学博雅国际班</td>
+					</tr>
+					<tr>
+						<td>广州市第八十六中学A-level国际高中课程</td>
+						<td>北大附中为明广州实验学校国际部</td>
+						<td>广州外国语学校</td>
+						<td>梅沙黑利伯瑞书院</td>
+						<td>广州西关外国语学校国际部</td>
+					</tr>
+				</table>
+			</div>
+			<!-- 佛山 -->
+			<div class="attended-school-bd">
+				<table width="925" cellpadding="0" cellspacing="0" border="0">
+					<tr>
+						<td>广东碧桂园学校（佛山顺德）</td>
+						<td>中信山语湖双语国际学校（佛山）</td>
+						<td>佛山市外国语学校国际部</td>
+						<td>广东实验中学顺德学校国际部（佛山顺德）</td>
+						<td>惠州市奥弗国际学校</td>
+					</tr>
+					<tr>
+						<td>珠海英华剑桥国际学校</td>
+						<td>浙江常春藤国际高中</td>
+						<td>美国泉谷学校—西交大苏州附属中学美国课程中心（苏州）</td>
+						<td>厦门菲尔德国际学校</td>
+						<td>福大至诚国际高中课程中心(福州)</td>
+					</tr>
+				</table>
+			</div>
+			<!-- 海外高中 -->
+			<div class="attended-school-bd">
+				<table width="925" cellpadding="0" cellspacing="0" border="0">
+					<tr>
+						<td>英国卡迪夫学院</td>
+						<td>英国诺里奇中学</td>
+						<td>亚肯豪斯学院</td>
+						<td>英国罗切斯特公学</td>
+						<td>汉普斯特德艺术学院</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<!-- 精彩演讲 -->
+	<div class="lecture" id="lecture">
+		<div class="w1000 lectureCon">
+			<div class="fl timer">
+				<!-- <p>10:00-11:00</p>
+				<p>11:00-12:00</p>
+				<p>11:00-12:00</p>
+				<p>15:30-17:30</p>
+				<p>17:30-19:00</p> -->
+			</div>
+			<div class="fl lectureText">
+				<p>从幼儿园到高中的入学人生规划</p>
+				<p>深入解读国际课程现状</p>
+				<p>家长如何转变教育观来适应当前国际教育的新形势</p>
+				<p>如何培养孩子成为真正的国际化人才</p>
+				<p>根据未来留学国家选择合适的国际学校</p>
+				<p>海外各个阶段的教育现状</p>
+				<p>中外教育差异与融合</p>
+				<p>世界名校大门为谁而开？</p>
+				<p>国际学校与普通学校的区别</p>
+				<p>为什么要选择国际学校？如何挑选合适的国际学校？</p>
+				<p>国际学校招收什么样的学生？面试中的注意事项</p>
+				<p>国际课程的学习如何逐渐改变学生的性格</p>
+				<p>怎样做才是一个合格的国际学校的学生家长？</p>
+				<p>学生与家长如何跨过转学的心理暗流期？家长与孩子如何有效沟通？</p>
+				<p>不同年龄段的教养秘诀</p>
+				<p>中国根基与国际化视野，如何培养孩子成为真正的国际化人才？</p>
+				<p>全人教育与个性化成长</p>
+			</div>
+			<!-- <table width="100%" border="0" cellspacing="0" cellpadding="0" style="table-layout:fixed;">
+					<tr>
+						<td align="center">10:00-11:00</td>
+						<td>
+							从幼儿园到高中的入学人生规划
+							<br> 深入解读国际课程现状
+							<br> 家长如何转变教育观来适应当前国际教育的新形势
+							<br> 如何培养孩子成为真正的国际化人才
+							<br> 根据未来留学国家选择合适的国际学校
+							<br> 海外各个阶段的教育现状
+						</td>
+
+					</tr>
+					<tr>
+						<td align="center">11:00-12:00 </td>
+						<td>
+							中外教育差异与融合
+							<br> 世界名校大门为谁而开？
+							<br> 国际学校与普通学校的区别
+							<br> 为什么要选择国际学校？如何挑选合适的国际学校？
+							<br> 国际学校招收什么样的学生？面试中的注意事项
+							<br> 国际课程的学习如何逐渐改变学生的性格
+						</td>
+
+					</tr>
+					<tr>
+						<td align="center">11:00-12:00 </td>
+						<td>
+							怎样做才是一个合格的国际学校的学生家长？
+							<br> 学生与家长如何跨过转学的心理暗流期？家长与孩子如何有效沟通？
+							<br> 不同年龄段的教养秘诀
+							<br> 中国根基与国际化视野，如何培养孩子成为真正的国际化人才？
+							<br> 全人教育与个性化成长
+						</td>
+
+					</tr>
+					<tr>
+						<td align="center">15:30-17:30 </td>
+						<td>
+							低龄留学的利弊分析
+							<br> 留学申请最新趋势和办理签证解析
+							<br> 中国学生留学专业选择与未来职业规划
+							<br> 国外教育情况介绍
+						</td>
+
+					</tr>
+					<tr>
+						<td align="center">17:30-19:00</td>
+						<td>
+							低龄留学的利弊分析
+							<br> 留学申请最新趋势和办理签证解析
+							<br> 中国学生留学专业选择与未来职业规划
+							<br> 国外教育情况介绍
+						</td>
+
+					</tr>
+				</table> -->
+		</div>
+	</div>
+	<div class="layout-four" id="specialist">
+		<div class="jyzjmdm">
+			
+		</div>
+		<div class="w1000">
+			<div class="specialist">
+				<div id="specialistLeft" class="unselect specialist-left">〈</div>
+				<div id="specialistRight" class="unselect specialist-right">〉</div>
+				<div class="specialist-content">
+					<ul class="clear specialist-item">
+						<li>
+							<img class="photo" src="./images/Florence-Chow.jpg">
+							<img class="jieshao" src="./images/specialBg.png">
+							<div class="specialist-info">
+								<p class="title">国际教育专家</p>
+								<p class="name">Florence Chow</p>
+								<span class="yuyue"></span>
+							</div>
+						</li>
+						<li>
+							<img class="photo" src="./images/Jeffrey-Maher-PC.png">
+							<img class="jieshao" src="./images/specialBg.png">
+							<div class="specialist-info">
+								<p class="title">国际教育专家</p>
+								<p class="name">Jeffrey Maher</p>
+								<span class="yuyue"></span>
+							</div>
+						</li>
+						<li>
+							<img class="photo" src="./images/chenjinlong.jpg">
+							<img class="jieshao" src="./images/specialBg.png">
+							<div class="specialist-info">
+								<p class="title">国际教育专家</p>
+								<p class="name">陈金龙</p>
+								<span class="yuyue"></span>
+							</div>
+						</li>
+						<li>
+							<img class="photo" src="./images/dongcunguo.png">
+							<img class="jieshao" src="./images/specialBg.png">
+							<div class="specialist-info">
+								<p class="title">国际教育专家</p>
+								<p class="name">董存国</p>
+								<span class="yuyue"></span>
+							</div>
+						</li>
+						<li>
+							<img class="photo" src="./images/libin-PC.png">
+							<img class="jieshao" src="./images/specialBg.png">
+							<div class="specialist-info">
+								<p class="title">国际教育专家</p>
+								<p class="name">李斌</p>
+								<span class="yuyue"></span>
+							</div>
+						</li>
+						<li>
+							<img class="photo" src="./images/huangzhimin.jpg">
+							<img class="jieshao" src="./images/specialBg.png">
+							<div class="specialist-info">
+								<p class="title">国际教育专家</p>
+								<p class="name">黄志铭</p>
+								<span class="yuyue"></span>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="layout-five" id="course">
+		<div class="w1000">
+			<div class="title">
+				<p>五大主流国际课程</p>
+			</div>
+			<div class="course-title">
+				<ul class="wrap clear">
+					<li class="active">
+						<p>A-Level课程</p>
+					</li>
+					<li>
+						<p>IB课程</p>
+					</li>
+					<li>
+						<p>AP课程</p>
+					</li>
+					<li>
+						<p>加拿大课程</p>
+					</li>
+					<li class="last">
+						<p>澳大利亚课程</p>
+					</li>
+				</ul>
+			</div>
+			<div class="course-cont">
+				<ul>
+					<li class="show">课程介绍：A-Level课程，是英国的普通中等教育证书考试高级水平课程，是目前世界上最为广泛采用的基础教育体制，全球现有160多个国家的11000多所正规大学所认可A-level课程，每年有500多万学生参加A-level考试，学生凭证书可直接进入各国大学的大学一年级学习（包括剑桥、牛津、哈佛、耶鲁等世界名校）。</li>
+					<li class="hide">课程介绍：IB课程全称为国际预科证书课程（International Baccalaureate Diploma Programme,简称IB课程），是由国际文凭组织为高中生设计的为期两年的课程。IB课程不以世界上任何一个国家的课程体系为基础而自成体系，广泛吸收了当代许多发达国家主流课程体系的优点，涵盖了其主要的核心内容。</li>
+					<li class="hide">课程介绍：美国高中AP课程(Advanced Placement)实际意义是美国大学先修课程、美国大学预修课程。由美国大学理事会提供的在高中授课的大学课程。高中生可以选修这些课程，在完成课业后参加AP考试，得到一定的成绩后可以获得大学学分。目前，已有40多个国家的近3600所大学承认AP学分为其入学参考标准和该项考试为考生增添的大学学分，其中包括哈佛、耶鲁、牛津、剑桥、帝国理工等世界名牌大学。</li>
+					<li class="hide">课程介绍：加拿大高中课程目前是指国内开设的中加课程，主要来自于加拿大生活、教育条件最好的两个省区：英属哥伦比亚(BC)省和安大略省，所以加拿大国际高中课程分为BC课程和安大略课程两种。BC课程较难，适用的加拿大大学也更多。</li>
+					<li class="hide">澳大利亚是近几年中国学生留学选择的热门国家，尤其是澳大利亚移民局出台的审核签证的SVP政策，不仅让学生在签证审核中简化了程序，同时让学生在留学时也不再受到学生国籍的影响。在澳大利亚，世界百强的大学就有8所，这就给留学生很大的选择机会。而且留学满两年的学生，只要完成了全日制的课程，就相当于获得两年的工作签证，这些政策是在其他国家享受不到的。</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="layout-thirteen">
+		<div class="w1000">
+			<div class="about">
+				<h2 class="title">关于IEduChina中国国际教育网</h2>
+				<div class="content">
+					<p>IEduChina中国国际教育网作为中国国际教育的门户平台，以服务家长和学生的国际教育需求为目标，提供国际学校选校、入学指导、留学规划、课程培训和游学等一 系列的中国国际教育服务。 每年在全国各地举行各类讲座、探校、招生展、校长论坛等近百场活动，切实解决家长们的选校难题，帮助孩子实现梦想。</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="layout-fourteen" id="contact">
+		<div class="g-title2">
+			
+		</div>
+		<div class="w1000">
+			<div class="contact-us">
+				<!-- <div class="intro">
+					<p>1、展位预定制止时间：2017年11月10日前；</p>
+					<p>2、演讲单位需提交：中英文演讲题目、演讲人简介/照片、250字演讲摘要，演讲PPT。提交截止日期：2017年11月10日止；</p>
+				</div> -->
+				<ul class="clear contact">
+					<li>
+						展位预定及赞助
+						<br /> 杨秋妮
+						<br /> Tel：+86-0755-83279017-837
+						<br /> Email:yangqiuni@ieduchina.com
+					</li>
+					<li>
+						观众参展咨询
+						<br /> 李月
+						<br /> Tel：+86-0755-83279017-245
+						<br /> Email:liyue@ieduchina.com
+					</li>
+					<li>
+						媒体合作咨询
+						<br /> 朱自群
+						<br /> Tel：+86-0755-83279017-844
+						<br /> Email:zhuziqun@ieduchina.com
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="footer-content">
+			<p class="copyright">
+				<a target="_blank" href="http://www.miitbeian.gov.cn" rel="nofollow">中国国际教育网 (粤ICP备06087881号-19)</a>
+				<span> Copyright ©
+					<label id="siteyear">2017</label>, All Rights Reserved.</span>
+			</p>
+			<p class="copyright">中文版权所有,网站所有图片、文字未经许可不得拷贝、复制。</p>
+			<div class="police">
+				<a rel="nofollow" target="_blank" href="http://61.144.227.239:9002/">
+					<img src="images/icon_police1.jpg" height="50" width="120" alt="深圳网络警察报警平台">
+				</a>
+				<a rel="nofollow" target="_blank" href="http://61.144.227.239:9003/webrecord/form_query.jsp">
+					<img src="images/icon_police2.jpg" height="50" width="120" alt="公共信息安全网络监察">
+				</a>
+				<a rel="nofollow" target="_blank" href="http://www.12377.cn/">
+					<img src="images/icon_police3.jpg" height="50" width="120" alt="不良信息举报中心">
+				</a>
+				<a rel="nofollow" target="_blank" href="http://szcert.ebs.org.cn/9822308f-c3cf-4c02-851d-6bac920e6898">
+					<img src="images/icon_police4.jpg" height="50" width="120" alt="工商网监电子标识">
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- google-analytics -->
+	<script>
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-6295404-2']);
+		_gaq.push(['_setDomainName', '.ofweek.com']);
+		_gaq.push(['_trackPageview']);
+		(function () {
+			var ga = document.createElement('script');
+			ga.type = 'text/javascript';
+			ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? ' https://ssl' : ' http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+	<!-- PC端统计代码： -->
+	<script>
+		var _hmt = _hmt || [];
+		(function () {
+			var hm = document.createElement("script");
+			hm.src = "https://hm.baidu.com/hm.js?d77be0754496937ff4c81583dea7a7b3";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+
+
+	<!--移动端跳转-->
+	<script type="text/javascript">
+		function IsPC() {
+			var userAgentInfo = navigator.userAgent;
+			var Agents = ["Android", "iPhone",
+				"SymbianOS", "Windows Phone",
+				"iPad", "iPod"
+			];
+			var flag = true;
+			for (var v = 0; v < Agents.length; v++) {
+				if (userAgentInfo.indexOf(Agents[v]) > 0) {
+					flag = false;
+					break;
+				}
+			}
+			return flag;
+		}
+
+		//调用
+		if (!IsPC()) {
+			location.href = "m.ieduchina.com/topic/2018spring/guangzhou";
+		}
+	</script>
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/jquery.carousel.js"></script>
+	<script type="text/javascript" src="js/main.js?v=20171226"></script>
+	<script>
+		(function () {
+			var c = document.createElement('script');
+			c.src = '//kefu.qycn.com/vclient/state.php?webid=124198';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(c, s);
+		})();
+	</script>
+</body>
+
+</html>
